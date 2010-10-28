@@ -77,7 +77,7 @@ ul.posts {
 .site {
   font-size: 110%;
   text-align: justify;
-  width: 35em;
+  width: 36em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -190,4 +190,8 @@ ul.posts {
 
   #related h2 {
     margin-bottom: 1em;
+  }
+
+.gist {
+	font-size: 80%;
   }
