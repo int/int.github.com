@@ -1,0 +1,10 @@
+---
+layout: post
+title: MT config
+time: "23:39"
+extended: ":EXTENDED:"
+---
+
+Changed hostname in links: linuxfire.net.dhis.org -> linuxfire.dhis.org. Two things should be taken care of:
+<ul><li>'weblog config' in MT itself</li><li>cgi path in the file 'mt.cfg'</li></ul>
+

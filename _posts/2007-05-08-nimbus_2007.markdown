@@ -1,0 +1,19 @@
+---
+layout: post
+title: Nimbus 2007
+time: "22:59"
+extended: ":EXTENDED:"
+---
+
+No, it's not the latest version of the Nimbus broomsticks in Harry Potter's wizarding world.  It's the open solaris' [default desktop theme](https://nimbus.dev.java.net/).
+
+OK, call me a bad lover.  First mac and then solaris.  But it's really a good theme that's not only pretty (not eye-candy) but also feels stable. What's most important, it would not hurt your eyes like these-days-popular-extreme-bright-or-black themes really do. Not to mention that it's [professional](https://nimbus.dev.java.net/spec/index.html).
+
+Take a look at [all its controls](http://galbraiths.org/blog/wp-content/uploads/2007/03/controls_regular.png) and [the desktop](http://galbraiths.org/blog/wp-content/uploads/2007/03/staroffice.png) using this theme.
+
+For ubuntu, you can download the pkg from [gnome-look](http://www.gnome-look.org/content/show.php/Nimbus+%28Ubuntu+and+Debian%29?content=54755). Besides, you can get [the source](http://dlc.sun.com/osol/jds/downloads/extras/) and compile it yourself.
+
+Here's a shot showing the clean (& healthy) [nimbus desktop](http://linuxfire.com.cn/~alecs/pics/nimbus.png) of mine.  You can download the background from the source link above.
+
+PS, on ubuntu, you can install `sun-java6-fonts` to get the lucida fonts which go smoothly with the nimbus theme.
+

@@ -1,0 +1,13 @@
+---
+layout: post
+title: MT Styles
+time: "15:35"
+extended: ":EXTENDED:"
+---
+
+The 'StyleCatcher' plugin is installed by default on MT 3.31.  With that you can easily change the (new) styles.  Sixapart has some styles put at its [style library](http://www.sixapart.com/movabletype/styles).  And there are more (kool) themes at the [MT style contest](http://www.thestylecontest.com/).
+
+Take a look at [the big winner](http://www.thestylecontest.com/designs/the_late_show).  It'll look nicer with a three-column layout.  Here is a  [clean style](http://www.thestylecontest.com/designs/iconic).  And this [relaxation style](http://www.thestylecontest.com/designs/relaxation_summer) feels very casual & smooth.  Oh well, [have you mooed today?](http://www.thestylecontest.com/designs/cartoon)  :^)
+
+One thing to note is that a lot of themes on the site are packed with the old layout format.  To cope with the StyleCatcher, you have to rename the main dir as 'theme-blah' and the main css as 'theme-blah.css'.
+

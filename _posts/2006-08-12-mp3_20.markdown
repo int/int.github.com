@@ -1,0 +1,28 @@
+---
+layout: post
+title: Mp3 2.0
+time: "09:23"
+extended: ":EXTENDED:"
+---
+
+[Optical](http://linuxfire.com.cn/~optical/) has recommended [mpd]( http://www.musicpd.org/) to me for a long time.  I have been using [bmp](http://bmp.beep-media-player.org/index.php/BMP_Homepage) (i call it the gtk2 version of that old-fashioned xmms).  Not 'good enough' but ok to live with.  Time to try new (exciting) stuff.
+
+The process is quite easy.   Just install the mpd server and one of [clients](http://www.musicpd.org/clients.shtml) you like.  My choice is [gmpc](http://cms.qballcow.nl/index.php?page=Gnome_Music_Player_Client) and the command line tool [mpc](http://www.musicpd.org/mpc.shtml). To live in a 'mp3 2.0' century, you'd better install [mutagen](http://www.sacredchao.net/quodlibet/wiki/Development/Mutagen) since the `mid3iconv` utility can help out you 'mp3 1.0 refugees'.
+
+Do some config, create the database, start the daemon and run the client.  Now you have a simple but clean interface.  You can use `mpc` to add new songs to the db:  
+`$ mpc update path/to/song.mp3`  (path is relative to your music_directory)  
+And btw, mpd's default config file is `~/.mpdconf`, NOT `~/.mpd.conf`. Be careful.
+
+Now that with mpd installed, we really can have more fun:
+
+1. Show what you are playing on conky:  
+Just edit ~/.conkyrc to add some mpd_\* [variables](http://conky.sourceforge.net/variables.html).  To correctly show Chinese chars, make sure conky runs in the UTF-8 environment and specify in ~/.conkyrc your favorite chinese fonts to show the title/artist. Here's a [screenshot](http://linuxfire.com.cn/~alecs/pics/conky.png).
+
+2. Announce your playing song and stats in xchat:  
+Install [MPD.pm](http://www.musicpd.org/MPD-pm.shtml) and this [mpd-info](http://www.linuxirc.com/download/mpd-info-1.0.pl) script.
+
+3. Show music status in your gaim:  
+[gtalk-testing](http://desktop.google.com/download/googletalk/googletalk-setup-testing.exe) now has a new feature called [music status](http://www.google.com/talk/images/music_status.gif).  I just wrote a simple gaim plugin to do the similar thing:  
+`$ git clone http://linuxfire.com.cn/~alecs/repo/musicstatus`   
+You can view it via [gitweb](http://linuxfire.com.cn/~alecs/cgi-bin/git).  It's actually quite trivial.
+

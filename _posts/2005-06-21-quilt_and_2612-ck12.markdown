@@ -1,0 +1,53 @@
+---
+layout: post
+title: "quilt and 2.6.12-ck[1|2]"
+time: "18:24"
+extended: ":EXTENDED:"
+---
+
+<a href=http://ck.kolivas.org/patches/2.6/2.6.12/2.6.12-ck1/>2.6.12-ck1</a>, the <a href=http://ck.kolivas.org/patches/2.6/2.6.12/baby_cigar.JPG>'Baby Cigar'</a>, was out so i just tried it out. But it failed to compile:
+
+>   kernel/sched.c: In function `inc_nr_running':                               
+>   kernel/sched.c:527: error: structure has no member named `migration_thread' 
+>   kernel/sched.c: In function `dec_nr_running':                               
+>   kernel/sched.c:537: error: structure has no member named `migration_thread' 
+>   make[2]: *** [kernel/sched.o] Error 1                                       
+>   make[1]: *** [kernel] Error 2                            
+
+UP uses SMP-only stuff.  It's easy to fix. A very trivial bug. I think Con might have been too happy/busy having a new baby that he has overlooked this. =)
+
+We can simply add some #ifdef to comment out SMP code for UP. I dont want to mess this trivial fix patch with the 'official' ck patch so i use the <a href=http://savannah.nongnu.org/projects/quilt>quilt tool</a>.
+
+Simply put, quilt is a patch managing tool derived from Andrew Monton's <a href=http://www.zipworld.com.au/~akpm/linux/patches/>patch scripts</a>. It eases all the patch push/pop work in the process of developing/debugging/fixing/reverting. 
+
+Now, back to our case, we create our fix by the following command, 
+
+$ quilt new trivialfixsmp.diff
+
+and then edit the file kernel/sched.c to add make some #ifdef,
+
+$ quilt edit kernel/sched.c  
+
+and then we refrsesh the patch,
+
+$ quilt refresh
+
+and you'll see the patch at patches/trivialfixsmp.diff
+
+Yeah, i made my patch, compiled the kernel, and found that Con noticed the issue too. And he soon (very soon, if you dont mind) released the ck2. And i found that Con's patch's a little bit different from mine (different patches to do the same thing, anyway). So to use the 'official' fix patch from ck2, we can first remove our patch,
+
+$ quilt pop
+$ quilt delete trivialfixsmp.diff
+
+and then import Con's patch for this
+
+$ quilt import sched-fix_up_build.patch
+
+and finally apply it,
+
+$ quilt push
+
+
+Quilt neat. =)
+For more information, you can read <a href=http://www.suse.de/~agruen/quilt.pdf>this pdf</a> (it's in the quilt tar ball too).
+

@@ -1,0 +1,11 @@
+---
+layout: post
+title: Go Gutsy
+time: "16:36"
+extended: ":EXTENDED:"
+---
+
+Upgraded one of my boxes to Gutsy Gibbon.  Almost everything goes fine, except some glitches about nvidia and gdm.  Hope they will get fixed soon.  The font rendering is impressive. Really cleaner and feels tidier.
+
+Desktop fashion is a funny thing. Murrine is no wonder the hottest theme engine nowadays. Here's a [murrina screenshot](/~alecs/pics/murrina.png) that goes well with pidgin's new clean, simple & elegant style. Oh well, i do like those downloaded wallpapers.
+
