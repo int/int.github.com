@@ -12,10 +12,10 @@ tools.  I like writing my blogs with my favorite editor.  Years back ago, I
 even used the [nanoblogger][nb].  It's a static blog generator written in pure
 shell scripts and commands.  It's kinda slow, though.
 
-Nowadays, as we're in a post-cgi, web-richer-than-ever era, it seems static
-generator is a new trend again.  Web apps are more mature and flexible these
-days and it's way easier to hook up and glue 'em altogether. A static generator
-fits well -- It's fast while you can seamlessly integrate different
+Nowadays, as we're in a post-cgi-and-ajax-web-richer-than-ever era, it seems
+static generator is a new trend again.  Web apps are more mature and flexible
+these days and it's way easier to hook up and glue 'em altogether. A static
+generator fits well -- It's fast while you can seamlessly integrate different
 applications.
 
 Among many, [Jekyll][jekyll] is a modern and great blog-aware static
