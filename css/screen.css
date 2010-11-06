@@ -196,3 +196,13 @@ ul.posts {
 	font-size: 80%;
 	line-height: 1.4em;
   }
+
+blockquote {
+margin:22px 40px;
+padding:3px;
+font-style: italic;
+font-size: 120%;
+color:#575757;
+padding: 0 50px;
+background: transparent url("/images/blockquote.gif") no-repeat 0 0;
+}
