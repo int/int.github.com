@@ -11,13 +11,13 @@ technique suggested by
 [Knuth](http://www-cs-faculty.stanford.edu/~uno/papers/dancing-color.ps.gz) for
 solving [Exact Cover](http://en.wikipedia.org/wiki/Exact_cover) problem.
 Details are in the paper.  Here I just give some _outlines_ of DLX and how we
-can apply it to solve problems.
+can apply it to solve some types of searching problems.
 
 The exact cover problem is to find a set of rows from a 0-1 matrix s.t. each
 column has _exactly_ one 1.  A common backtracking method is suggested by Knuth
 called the [Algorithm X](http://en.wikipedia.org/wiki/Algorithm_X).  Dancing
 links is an fast implementation of Algorithm X utilizing circular doubly linked
-links (hence the name DLX) taking the advantange that the more deeper we're at,
+links (hence the name DLX) taking the advantage that the more deeper we're at,
 the more sparse the current matrix is.  It's fast in that it has fast
 updating/restoring of the backtracking context.
 
@@ -28,7 +28,7 @@ problem, it's not easy to predict whether a heuristic really works (well).  DLX
 can be used to solve a range of exact-cover-like problems and often it has
 reasonably good running time.  All we need is to build the matrix model --
 normally we use rows to denote states and columns conditions.  And one
-optimzation is that we always start searching the column that has the most 1s.
+optimization is that we always start searching the column that has the most 1s.
 
 1. the classic exact cover problem.  Just build the matrix and run the DLX.
 example: Sudoku.  Each row is a (r,c,d) state denoting that we put digit d to
