@@ -33,7 +33,7 @@ the tool. So first use this [strip script][strip] to clean up and then use
 <script src="http://gist.github.com/651761.js?file=strip.pl"></script>
 
 All entries have been successfully converted and the
-markdown file have been rendered by Jekyll without any problems -- in fact,
+markdown files have been rendered by Jekyll without any problems -- in fact,
 very pretty. :-)  But I have problems to convert the comments.  So all old
 comments are not showing up as of this writing.
 
@@ -50,9 +50,9 @@ github powered by Jekyll.  Missing features are nice-looking categories and
 archives, tags, searches.  I might add them later as I get more familiar with
 Jekyll and its template system to make more customizations.
 
-You can get all my changes from [the src repo of this site][repo].  Once it's
+You can get all my changes from the [src repo][repo] of this site.  Once it's
 set up, everything else becomes darn smooth-easy.  Hope I can write more and
-more often -- sometimes I was really lazy to miss a lot of
+more often -- sometimes I was really too lazy to miss a lot of
 should-be-jotted-downs about cool stuff or after-thoughts, which makes me feel
 kinda regretted.
 
