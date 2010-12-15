@@ -20,7 +20,7 @@ applications.
 
 Among many, [Jekyll][jekyll] is a modern and great blog-aware static
 generator.  github makes all [pages][pages] automatically piped
-through it.  Writing and updating blog works like a charm: `vim x.md && git
+through it.  Writing and updating blog works like a charm: `vim x.md && git commit -am 'update' && git
 push`.  One of other interesting alternatives is [hyde][hyde], which is
 written in python and more feature-rich.
 
